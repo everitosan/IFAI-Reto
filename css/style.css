@@ -44,9 +44,10 @@ body{background:-o-radial-gradient(center, ellipse cover, #b9b9b9 0%, #c4c4c4 10
 header{background-color:#5e1670;border:none;border-bottom:5px solid #391442;color:#391442;width:100%;}
 header h1{font-weight:100;color:#fff;padding:.5em;margin:0}
 #busqueda{background:rgba(255,255,255,0.6);padding:.8em 0;text-align:center;}
-#busqueda button{background-color:#5e1670;border:none;border-bottom:5px solid #391442;color:#fff;font-size:1.6em;padding:.2em 1em;margin:0 0 0 1em;position:relative;top:2px}
-#busqueda input{margin:0 0 0 1em;border:none;height:40px;width:40%;-webkit-box-shadow:0 1px 2px #b9b9b9;}
-.sod_select{border:none;width:44%;-webkit-box-shadow:0 1px 2px #b9b9b9;}
+#busqueda div{width:49%;display:inline-block;vertical-align:top}
+#busqueda button{background-color:#5e1670;border:none;border-bottom:5px solid #391442;color:#fff;font-size:1.6em;padding:.2em 1em;margin:0 0 0 1em;float:right}
+#busqueda input{vertical-align:top;margin:0 0 0 1em;border:none;height:40px;width:60%;-webkit-box-shadow:0 1px 2px #b9b9b9;}
+.sod_select{border:none;width:100%;-webkit-box-shadow:0 1px 2px #b9b9b9;}
 .sod_select .sod_list_wrapper{border:none;width:101%}
 #resultados{overflow:hidden;text-align:center;height:100%;width:100%;}
 #resultados .item{background:#fff;-webkit-box-shadow:0 4px 8px #8e9699;display:inline-block;vertical-align:top;overflow:hidden;height:200px;width:450px;margin:1em 4.3em;}
@@ -58,3 +59,13 @@ header h1{font-weight:100;color:#fff;padding:.5em;margin:0}
 #resultados .item .info .datos{background:url("../img/fondo_datos.jpg");-moz-background-size:100% 100%;-webkit-background-size:100% 100%;height:158px;width:100%;width:250px;padding-top:.5em;}
 #resultados .item .info .datos p{color:#af7dbc;text-align:left;margin:0;padding:.5em}
 #resultados .item .info .datos .nombre{color:#2d2b2d;font-size:1.2em}
+@media screen and (max-width:830px){#resultados .item{margin:1em 0}
+}@media screen and (max-width:760px){#busqueda div{width:90%;}
+#busqueda div input{float:left;margin:0}
+#busqueda div button{margin:0}
+#busqueda div:last-child{margin-top:.3em}
+#resultados .item{margin:1em 0}
+}@media screen and (max-width:480px){#busqueda div input{width:70%}
+#resultados .item{height:auto;width:200px;}
+#resultados .item .info h3{text-align:center}
+}
